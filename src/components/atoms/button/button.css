@@ -1,0 +1,20 @@
+.button{
+    background-color: var(--violetBlue);
+    width: 27%;
+    border-radius: 30px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-family: 'helve';
+    border: none;
+}
+
+.button:hover{
+    background-color: var(--violet);
+}
+
+.button_h3{
+    font-size: 0.9rem;
+}

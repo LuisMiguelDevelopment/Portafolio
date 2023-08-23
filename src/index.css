@@ -1,0 +1,21 @@
+:root{
+    --violetBlue:#5E17EB;
+    --violet:#6E07F3;
+    --black:#0000;
+    --white:#ffff;
+}
+
+@font-face {
+    font-family: 'helve';
+    src: url(../../../assets/fonts/HelveticaWorld-Regular.ttf);
+  }
+
+  *{
+    font-family: 'helve';
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+

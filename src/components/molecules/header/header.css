@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'helve';
+    src: url(../../../assets/fonts/HelveticaWorld-Regular.ttf);
+  }
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.2rem;
+    
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100px;
+    font-family: 'helve';
+    font-weight: bold;
+    z-index: 100;
+    
+}
+
+.navbar__a{
+    color: #000;;
+}
+
+
+.navbar__ul{
+    display: flex;
+    padding-right: 50px;
+}
+
+.navbar__li{
+    margin: 0 20px;
+}
+
+.navbar__logo{
+    width: 100px;
+    padding-left: 50px;
+}
+
+.navbar__a:hover{
+    color: #5E17EB;
+}
+
+.navbar__burger{
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+.colorr a{
+    color: white;
+    
+}
+
+.colorr a:hover{
+    color: black;
+    
+}
+
+.colorr.navbar__links {
+    background-color: var(--white);
+}
+
+
+
+@media screen and (max-width:830px) {
+    *{
+        font-size: 1.1rem;
+    }
+
+    .header{
+        position: relative;
+    }
+    
+    .navbar__burger{
+        display: block;
+        
+    }
+    .navbar__links{
+        position: absolute;
+        top: 35px;
+        right: 80px;
+        background-color: var(--violetBlue);
+        width: 40%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        margin-right: 100%;
+        box-shadow:  10px 10px 10px 10px rgba(19, 14, 14, 0.582);
+        
+    }
+
+    .navbar__ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar__a{
+        color: white;
+    }
+    .navbar__a:hover{
+        color: #000;
+    }
+
+    .navbar__mobile-menu{
+        margin-right: 0;     
+    }
+
+}

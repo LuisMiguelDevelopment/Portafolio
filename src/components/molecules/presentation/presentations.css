@@ -1,0 +1,126 @@
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.presentation{
+    width: 60%;
+}
+.presentation__h1{
+    font-size: 3.7rem;
+    font-family: 'helve';
+}
+
+.presentation__h1--violet{
+    color: var(--violetBlue);
+}
+
+.presentation__container{
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation__p{
+    margin-top: 20px;
+    width: 100%;
+    font-size: 0.82rem;
+}
+
+.presentation__description{
+    width: 70%;
+}
+
+.presentation__button{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.presentation2{
+    order: 2;
+}
+
+.presentation2__logotipo1{
+    width: 350px;
+}
+
+
+/*Animaciones*/
+
+.presentation--right.visible{
+    opacity: 1;
+    transition: 0.7s ease-in-out all;
+    transform: translateX(70px);
+}
+
+.presentation--left.visible{
+    opacity: 1;
+    transition: 0.7s ease-in-out all;
+    transform: translateX(-70px);
+}
+
+
+@media screen and (max-width:721px) {
+    .main{
+        flex-direction: column;
+
+    }
+    .presentation{
+        width: 100%;
+        margin: 50px 0;
+    }
+    .presentation2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 70px 0;
+    }
+    .presentation__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0%;
+    }
+    
+
+
+    .presentation--right.visible{
+        opacity: 1;
+        transition: 0.7s ease-in-out all;
+        transform: translateY(10px);
+    }
+    
+    .presentation--left.visible{
+        opacity: 1;
+        transition: 0.7s ease-in-out all;
+        transform: translateY(-10px);
+    }
+
+    .presentation2__logotipo1{
+        width: 200px;
+    }
+
+}
+
+
+@media screen and (min-width:768px) {
+    
+
+
+    .presentation--right.visible{
+        opacity: 1;
+        transition: 0.7s ease-in-out all;
+        transform: translateX(30px);
+    }
+    
+    .presentation--left.visible{
+        opacity: 1;
+        transition: 0.7s ease-in-out all;
+        transform: translateX(-30px);
+    }
+
+}

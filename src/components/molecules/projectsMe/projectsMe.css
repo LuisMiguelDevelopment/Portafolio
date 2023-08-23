@@ -1,0 +1,108 @@
+.projectsMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 70px 0;
+   
+}
+
+.projectsMe__h1{
+    transform: translateX(-50px);
+}
+
+.projectsMe__h1, span{
+    font-size: 3rem;
+    
+}
+
+.projectsMe__h1--span{
+    color: var(--violetBlue);
+}
+
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.images__img{
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.images__logo , .images__a{
+    display: none;
+    padding: 5px;
+}
+
+.images__img--1{
+    background-image: url(../images/image1.png);
+    transform: translateY(30px);
+}
+.images__img--2{
+    background-image: url(../images/image2.png);
+    transform: translateY(30px);
+    
+}
+.images__img--3{
+    background-image: url(../images/image3.png);
+    transform: translateY(30px);
+    
+}
+
+
+
+.images__logo{
+    width: 40px;
+}
+/*Animaciones*/
+
+.projectsMe__h1.visible{
+    transition: 0.7s ease-in-out all;
+    transform: translateX(0px);
+}
+
+
+.images__img--1.visible{
+    transition: 0.7s ease-in-out all;
+    transform: translateY(0px);
+}
+.images__img--2.visible{
+    transition: 1s ease-in-out all;
+    transform: translateY(0px);
+}
+.images__img--3.visible{
+    transition: 1.5s ease-in-out all;
+    transform: translateY(0px);
+   
+}
+
+.images__img:hover{  
+    transition: 0.4s all ease-in-out;
+    transform: rotateX(160deg) scaleY(-1);
+    background-color: var(--violetBlue);
+    background-image: url();   
+    
+}
+
+.images__img:hover  .images__a{  
+    display: block;
+     color: white;
+}
+.images__img:hover  .images__logo{  
+    display: block;
+}
+

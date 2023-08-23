@@ -1,0 +1,27 @@
+.page{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    
+}
+
+.main ,.projectsMe{
+    scroll-snap-align: center;
+}
+
+
+
+
+@media screen and (max-width:500px) {
+    .page{
+        scroll-snap-type:none;
+        overflow-y:unset;
+        height: auto;
+    }
+    .projectsMe{
+        height: 100vh;
+        margin-top: 100px;
+    }
+  }
+
+
