@@ -9,7 +9,7 @@ const home = () => {
   return (
     
     <div className="page">
-      <Presentation/>
+      <Presentation className="page2"/>
       <CardServices/>
       <ProjectsMe/>
     </div>

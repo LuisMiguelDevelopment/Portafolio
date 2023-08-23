@@ -67,11 +67,12 @@
 @media screen and (max-width:721px) {
     .main{
         flex-direction: column;
-
+        height: 100vh;
     }
     .presentation{
-        width: 100%;
+        width: 100vw;
         margin: 50px 0;
+        margin-top: 100px;
     }
     .presentation2{
         width: 100%;
@@ -124,3 +125,11 @@
     }
 
 }
+
+
+@media screen and (max-width:667px) {
+    .main{
+        height: 1000px;
+    }
+    
+  }

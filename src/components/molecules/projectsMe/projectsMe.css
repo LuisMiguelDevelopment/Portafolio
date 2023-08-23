@@ -106,3 +106,9 @@
     display: block;
 }
 
+@media screen and (max-width:667px) {
+    .projectsMe{
+        height: 1200px;
+    }
+    
+  }
